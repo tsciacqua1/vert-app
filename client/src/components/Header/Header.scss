@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    gap: 20px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
