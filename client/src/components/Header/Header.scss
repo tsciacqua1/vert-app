@@ -1,14 +1,14 @@
 .header {
-  display: flex;
-
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
   .navbar {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    position: relative;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
-
+    margin-left: -40px;
     a {
       text-decoration: none;
       color: black;
