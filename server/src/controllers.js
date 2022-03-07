@@ -50,6 +50,14 @@ const getStats = async (req, res) => {
       return total;
     };
 
+    const monthData = (i) => {
+      let monthData = [];
+      data[i].map((el) => {
+        monthData.push(el);
+      });
+      return monthData;
+    };
+
     for (let i = 3; i > 0; i--) {
       let date = new Date();
       let afterDate = new Date(date.getFullYear(), date.getMonth(), 1);
@@ -74,21 +82,21 @@ const getStats = async (req, res) => {
       let totalDistance = totalDistanceMonth(i);
       let totalTime = totalTimeMonth(i);
       let totalElevationGain = totalElevationGainMonth(i);
+
       newData.push({
-        [monthName]: {
-          totalDistance,
-          totalTime,
-          totalElevationGain,
-        },
+        data: monthData(i),
+        monthName,
+        totalDistance,
+        totalTime,
+        totalElevationGain,
       });
     }
 
-    console.log(newData);
+    res.json(newData);
   } catch (error) {
     console.error(error);
   }
 };
-getStats();
 
 module.exports = {
   getActivities,
