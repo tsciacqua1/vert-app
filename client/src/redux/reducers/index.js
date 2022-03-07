@@ -11,6 +11,12 @@ const rootReducer = (state = initialState, action) => {
         activities: action.payload,
       };
     }
+    case "GET_USER_STATS": {
+      return {
+        ...state,
+        stats: action.payload,
+      };
+    }
     default:
       return state;
   }

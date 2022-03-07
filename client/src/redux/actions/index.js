@@ -8,3 +8,12 @@ export const getUserActivities = () => async (dispatch) => {
     payload: response.data,
   });
 };
+
+export const getUserStats = () => async (dispatch) => {
+  const response = await axios.get("/stats");
+
+  dispatch({
+    type: "GET_USER_STATS",
+    payload: response.data,
+  });
+};

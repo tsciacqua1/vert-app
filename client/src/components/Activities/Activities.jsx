@@ -10,7 +10,7 @@ const Activities = () => {
 
   useEffect(() => {
     (async () => {
-      dispatch(getUserActivities());
+      await dispatch(getUserActivities());
     })();
   }, []);
 
