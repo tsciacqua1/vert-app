@@ -1,3 +1,12 @@
+# .env files
+
+`server` .env\
+ACCESS_TOKEN=
+PORT=
+
+`client` .env\
+REACT_APP_BASE_URL=
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
