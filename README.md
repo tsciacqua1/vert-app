@@ -1,4 +1,9 @@
-# .env files
+# HOW TO USE
+
+Follow the [instructions here](https://developers.strava.com/docs/getting-started/)\
+_IMPORTANT:_ params for scope: &scope=read_all,activity:read_all\
+
+### .env files
 
 `server` .env\
 ACCESS_TOKEN=\
