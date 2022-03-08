@@ -1,7 +1,7 @@
 # .env files
 
 `server` .env\
-ACCESS_TOKEN=
+ACCESS_TOKEN=\
 PORT=
 
 `client` .env\
